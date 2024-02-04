@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Login.css" />
+    <link rel="stylesheet" href="./css/Navbar.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <h2>
+            <a href="index.html" style="color: black;">
+              Car<span style="color: #19dc81">Rent</span>
+            </a>
+          </h2>
+        </div>
+        <div class="nav-items">
+          <h2>
+            <a href="index.html">Home</a>
+          </h2>
+          <h2><a href="RenterForm.html">Become a renter</a></h2>
+          <h2>Contact</h2>
+          <h2>
+            <a href="Login.html" class="nav-login-btn"> Login </a>
+          </h2>
+        </div>
+      </div>
+    </nav>
+    <div class="login-container">
+      <div class="login-form-container">
+        <form class="login-form">
+          <h1 style="text-align: center; margin: 20px">
+            Login to your Account
+          </h1>
+          <div class="or-opt">
+            <button class="login-with-google-btn" type="button">
+              <span>
+                <img
+                  src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
+                  alt=""
+                  class="google-img"
+                />
+              </span>
+              Login With Google
+            </button>
+            <hr class="hr-1" />
+            <h3>OR</h3>
+            <hr class="hr-2" />
+            <p style="color: red"></p>
+          </div>
+          <input type="email" placeholder="Email" />
+          <input
+            autocomplete="off"
+            type="password"
+            name="password"
+            placeholder="Create password"
+          />
+          <button type="submit" class="login-btn">Login</button>
+          <h4 style="text-align: center; margin: 50px">
+            Don't have an Account?
+            <a href="Signup.html">Create one</a>
+          </h4>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

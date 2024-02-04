@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/RenterForm.css" />
+    <link rel="stylesheet" href="./css/Navbar.css" />
+    <title>Car Information Form</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <h2>
+              <a href="index.html" class="black">
+                Car<span style="color: #19dc81">Rent</span>
+              </a>
+            </h2>
+          </div>
+          <div class="nav-items">
+            <h2>
+              <a href="index.html">Home</a>
+            </h2>
+            <h2><a href="RenterForm.html">Become a renter</a></h2>
+            <h2>Contact</h2>
+            <h2>
+              <a href="Login.html" class="nav-login-btn"> Login </a>
+            </h2>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <h1 style="margin-top: 110px; text-align: center">Rent Your Car</h1>
+    <div class="renter-form-container">
+      <div class="vehicle-details">
+        <h3>Vehicle Information</h3>
+        <form action="">
+          <div class="form-name">
+            <h4>Car Name</h4>
+            <input type="text" placeholder="Enter your first name" />
+          </div>
+          <div class="form-name">
+            <h4>Car Model</h4>
+            <input type="text" placeholder="Enter your last name" />
+          </div>
+          <div class="age">
+            <h4>Transmission</h4>
+            <select name="" id="">
+              <option value="">Auto</option>
+              <option value="">Manual</option>
+            </select>
+          </div>
+          <div class="age">
+            <h4>Air Conditioning</h4>
+            <select name="" id="">
+              <option value="">Yes</option>
+              <option value="">No</option>
+            </select>
+          </div>
+          <div class="age">
+            <h4>Number of Seats</h4>
+            <select name="" id="">
+              <option value="">7</option>
+              <option value="">5</option>
+              <option value="">4</option>
+              <option value="">2</option>
+            </select>
+          </div>
+
+          <div class="age">
+            <h4>Luggage Capacity</h4>
+            <select name="" id="">
+              <option value="">5</option>
+              <option value="">4</option>
+              <option value="">2</option>
+            </select>
+          </div>
+          <div class="age">
+            <h4>Fuel</h4>
+            <select name="" id="">
+              <option value="">Diesel</option>
+              <option value="">Petrol</option>
+              <option value="">Other</option>
+            </select>
+          </div>
+          <div class="legal-history">
+            <h4>Legal History</h4>
+            <select id="legalHistory" name="legalHistory" required>
+              <option value="clean">No Legal Cases Against the Vehicle</option>
+              <option value="pending">
+                Legal Case Pending (No Resolution Yet)
+              </option>
+              <option value="resolved">
+                Legal Case Resolved (No Ongoing Issues)
+              </option>
+            </select>
+          </div>
+         
+          <div class="upload-car-image">
+            <div class="car-image">
+              <h4>Upload Your Car Image</h4>
+              <input type="file" />
+            </div>
+          </div>
+
+          <h2
+            style="font-size: 24px; color: rgb(19, 173, 73); margin: 30px 0"
+          >
+            Personal Details
+          </h2>
+          <div class="personal-details">
+            <div class="form-name">
+              <h4>Full Name</h4>
+              <input type="text" placeholder="Enter your full name" />
+            </div>
+            <div class="form-name">
+              <h4>Email Address</h4>
+              <input type="text" placeholder="Enter your last name" />
+            </div>
+            <div class="phone-no-age">
+              <h4>Phone Number</h4>
+              <input type="number" placeholder="Enter your phone number" />
+            </div>
+            <div class="age">
+              <h4>Age</h4>
+              <select name="" id="">
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+              </select>
+            </div>
+
+            <div class="renter-form-document">
+              <h4>Driving License</h4>
+              <input
+                type="file"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="renter-form-document">
+              <h4>Vehicle Registration Document</h4>
+              <input
+                type="file"
+                name=""
+                id=""
+                placeholder="Confirm your email address"
+              />
+            </div>
+            <div class="address">
+              <h4>Address</h4>
+              <input
+                type="text"
+                placeholder="Enter your Address"
+                class="address-inp"
+              />
+            </div>
+            <div class="city-zipcode">
+              <div class="city">
+                <h4>City</h4>
+                <input type="text" placeholder="Enter your City" />
+              </div>
+              <div class="zip-code">
+                <h4>Zip Code</h4>
+                <input
+                  type="number"
+                  placeholder="Enter your Zip Code"
+                  class="zip-inp"
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="continue-form-btn">
+        <button type="button" class="reserve-btn">Reserve Now</button>
+      </div>
+    </div>
+  </body>
+</html>

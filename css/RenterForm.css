@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.renter-form-container {
+  max-width: 665px;
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 12px;
+  background-color : #ffffff;
+  box-shadow: 0 4px 8px 2px rgb(176, 174, 174);
+}
+.navbar .logo {
+  margin: 30px 180px;
+}
+.black {
+  color: black;
+}
+.vehicle-details {
+  border-bottom: 1px solid black;
+}
+.vehicle-details h3 {
+  font-size: 24px;
+  margin: 30px 0;
+  color: rgb(19, 173, 73);
+}
+.vehicle-details form {
+  display: flex;
+  /* padding: 10px; */
+  gap: 0 22px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  /* max-width: 680px; */
+}
+.vehicle-details form input {
+  height: 45px;
+  background-color: #dddbdb;
+  width: 300px;
+  outline: none;
+  margin: 30px 0;
+  padding-left: 10px;
+  font-size: 0.9rem;
+  border: none;
+}
+
+.city-zipcode {
+  display: inline-flex;
+  gap: 20px;
+}
+.city-zipcode .zip-inp {
+  width: 305px;
+}
+
+.vehicle-details form div h4 {
+  height: 5px;
+}
+.address .address-inp {
+  width: 640px;
+}
+.age select {
+  height: 47px;
+  margin: 30px auto;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: #dddbdb;
+  color: #3a3a3a;
+  font-size: 1rem;
+  width: 145px;
+}
+.age select option {
+  font-size: 1.2rem;
+}
+
+
+.continue-form-btn {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 50px;
+  align-items: center;
+  background-color: #868282;
+  height: 70px;
+}
+
+.continue-form-btn .reserve-btn {
+  background-color: rgb(23, 188, 86);
+  height: 45px;
+  border: 2px solid rgb(179, 179, 179);
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  width: 150px;
+}
+.continue-form-btn .reserve-btn:hover {
+  transition: 0.2s ease;
+  background-color: rgb(17, 132, 63);
+}
+
+.legal-history select {
+  height: 47px;
+  margin: 30px auto;
+  outline: none;
+  padding: 10px;
+  border: none;
+  background-color: #dddbdb;
+  color: #3a3a3a;
+  font-size: 1rem;
+}
+.legal-history select option {
+  font-size: 1.1rem;
+}
+.upload-car-image .car-image{
+  width: 665px;
+    border-bottom: 1px solid rgb(177, 175, 175);
+}
+.upload-car-image .car-image input{
+  /* background-color: #fff; */
+  width: 337px;
+  height: 35px;
+  padding-top: 10px;
+}
+
+.personal-details {
+  background-color: white;
+  display: flex;
+  gap: 0 30px;
+  flex-wrap: wrap;
+}
+.personal-details input {
+  height: 45px;
+  background-color: #dddbdb;
+  width: 300px;
+  outline: none;
+  margin: 10px 0;
+  padding-left: 10px;
+  font-size: 0.9rem;
+  border: none;
+}
+
+.personal-details div {
+  height: 100px;
+}
+.personal-details div h4 {
+  height: 5px;
+}
+
+.renter-form-document input{
+  height: 37px !important;
+  background-color: aquamarine;
+  padding-top: 15px;
+}
