@@ -35,7 +35,7 @@ align-items: center;
   outline: none;
   border-radius: 20px;
 }
-.login-btn {
+.login-form-btn {
   width: 150px;
   height: 50px;
   border: none;
@@ -84,4 +84,41 @@ align-items: center;
   margin-top: 90px;
   margin-left: 240px;
   width: 160px;
+}
+.login-form h1{
+  text-align: center;
+   margin: 20px;
+}
+.login-form h4{
+  margin: 50px;
+}
+@media (max-width:768px){
+  .login-container .login-form {
+    max-width: 400px;
+  }
+  .login-form h1{
+    margin: 15px 0;
+    width: 340px;
+  }
+  .login-form input{
+    width: 100%;
+  }
+  .hr-1 {
+    position: absolute;
+    margin-top: 90px;
+    width: 140px;
+    margin-left: 5px;
+  }
+  .hr-2 {
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 190px;
+    width: 140px;
+  }
+  .login-form h4{
+    margin: 20px;
+    text-align: center;
+    width: 340px;
+  }
+ 
 }

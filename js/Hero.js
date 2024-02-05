@@ -11,26 +11,35 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    document.querySelectorAll('.nav-list li a , .welcome-container a').forEach(link => {
-        link.addEventListener('click', function (e) {
-            smoothScroll.call(this, e);
-        });
-    });
+    const addSmoothScroll = (selectors) => {
+        document.querySelectorAll(selectors).forEach(link => link.addEventListener('click', smoothScroll));
+    };
 
-    const currentLocation = window.location.hash;
-    if (currentLocation) {
-        const currentLink = document.querySelector(`.nav-list li a[href='${currentLocation}']`);
-        if (currentLink) {
-            setActiveClass(currentLink);
+    addSmoothScroll('.nav-list li a, .welcome-container a');
+
+    const addDropdownToggle = () => {
+        const navLinks = document.querySelectorAll('nav ul li a:not(:only-child)');
+        const dropdowns = document.querySelectorAll('.nav-dropdown');
+        const navToggle = document.getElementById('nav-toggle');
+
+        navLinks.forEach(link => link.addEventListener('click', function (e) {
+            const dropdown = this.nextElementSibling;
+            if (dropdown) {
+                dropdown.style.display = (dropdown.style.display === 'none' || dropdown.style.display === '') ? 'block' : 'none';
+                e.stopPropagation();
+            }
+        }));
+
+        document.addEventListener('click', () => dropdowns.forEach(dropdown => dropdown.style.display = 'none'));
+
+        if (navToggle) {
+            navToggle.addEventListener('click', function () {
+                const navUl = document.querySelector('nav ul');
+                if (navUl) navUl.style.display = (navUl.style.display === 'none' || navUl.style.display === '') ? 'block' : 'none';
+                this.classList.toggle('active');
+            });
         }
-    }
+    };
 
-    // const navToggle = document.getElementById('nav-toggle');
-    // if (navToggle) {
-    //     navToggle.addEventListener('click', function () {
-    //         const navUl = document.querySelector('.nav-list');
-    //         if (navUl) navUl.classList.toggle('active');
-    //         this.classList.toggle('active');
-    //     });
-    // }
+    addDropdownToggle();
 });

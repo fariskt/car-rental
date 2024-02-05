@@ -77,7 +77,6 @@ body {
 .location-date .time {
   display: flex;
   padding: 5px;
-  /* max-width: 270px; */
   gap: 5px;
   flex-wrap: wrap;
 }
@@ -117,7 +116,7 @@ body {
   border: none;
   background-color: #dddbdb;
 }
-.driving-license-inp input{
+.driving-license-inp input {
   padding: 10px;
 }
 .city-zipcode {
@@ -165,7 +164,7 @@ body {
   cursor: pointer;
   width: 100px;
 }
-.continue-form-btn .close-button:hover{
+.continue-form-btn .close-button:hover {
   background-color: #4d4949;
   transition: 0.2s ease;
 }
@@ -178,7 +177,72 @@ body {
   cursor: pointer;
   width: 150px;
 }
-.continue-form-btn .reserve-btn:hover{
+.continue-form-btn .reserve-btn:hover {
   transition: 0.2s ease;
   background-color: rgb(17, 132, 93);
+}
+
+@media (max-width: 768px) {
+  .personal-details form{
+    margin-left: 20px;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 20px auto;
+    padding: 1px;
+    border: 1px solid #888;
+    width: 95%;
+    padding-bottom: 2rem;
+  }
+  .modal-details {
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .modal-details h3 {
+    color: rgb(15, 119, 83);
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .modal-details h4 {
+    font-size: 14px;
+    color: #504d4d;
+    font-weight: 550;
+  }
+  .location-date {
+    display: flex;
+    width: 300px;
+    color: #353232;
+    gap: 15px;
+    margin: 15px;
+    flex-direction: column;
+  }
+  .location-date .date,
+  .location-date .time {
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 280px;
+  }
+  .booked-car .car-name{
+    margin:10px 0;
+    font-size: 16px;
+  }
+  .booked-car img {
+    height: 180px;
+  }
+  .address .address-inp {
+    width: 305px;
+}
+.age select{
+  margin:5px 0;
+}
+.city-zipcode{
+  display: inline-flex;
+  flex-direction: column;
+}
+.continue-form-btn{
+  margin-top: 120px;
+}
 }

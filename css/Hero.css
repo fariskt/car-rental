@@ -1,24 +1,27 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .welcome-container {
   color: #333;
-  background: #f9f9f9 url("https://t4.ftcdn.net/jpg/02/52/46/25/360_F_252462576_koy7njo9iYx6gUcM26IZcDUs9fMKIKJs.jpg") repeat;
+  background: #f9f9f9
+    url("https://t4.ftcdn.net/jpg/02/52/46/25/360_F_252462576_koy7njo9iYx6gUcM26IZcDUs9fMKIKJs.jpg")
+    repeat;
   height: 100vh;
   text-align: center;
   padding: 200px;
 }
-.welcome-container h1{
+.welcome-container h1 {
   font-size: 3rem;
 }
-.welcome-container h3{
-  margin:30px auto;
+.welcome-container h3 {
+  margin: 30px auto;
   max-width: 620px;
   font-weight: 500;
 }
@@ -39,7 +42,7 @@ body{
 .button-primary {
   background-color: #3498db;
 }
-.button-primary:hover{
+.button-primary:hover {
   background-color: #1e98ea;
 }
 
@@ -51,31 +54,160 @@ body{
 }
 
 .bg-image {
-    margin-left: 200px;
+  margin-left: 200px;
+}
+.bg-image img {
+  height: 500px;
+  z-index: -10;
+  object-fit: contain;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  z-index: -1;
+}
+.container-heading {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+.container h1 {
+  width: 350px;
+  margin: auto;
+  font-size: 44px;
+  color: black;
+}
+.container h3 {
+  width: 350px;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 20px auto;
+  color: black;
+}
+.container button {
+  background-color: rgb(207, 226, 215);
+  height: 50px;
+  width: 280px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.form-container {
+  margin: 10px;
+}
+.trip-form {
+  color: white;
+  border-radius: 10px;
+  padding-left: 10px;
+  width: fit-content;
+  margin: 10px auto;
+}
+.trip-form form {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-left: 10px;
+}
+.trip-form form span {
+  margin-top: 15px;
+  font-size: 30px;
+  color: rgb(96, 92, 92);
+}
+.trip-form input {
+  height: 30px;
+  width: 200px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: black;
+}
+
+.trip-form h5 {
+  color: black;
+  font-weight: 500;
+}
+.trip-form form div {
+  margin: 5px 10px;
+  border-right: 1px solid silver;
+  padding-right: 10px;
+}
+.trip-form .return-date {
+  border: none;
+}
+.pickup-date input,
+.return-date input {
+  width: 150px;
+}
+.rent-btn {
+  background-color: rgb(41, 227, 122);
+  height: 45px;
+  width: 180px;
+  margin: 7px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: rgb(154, 147, 147);
+}
+.black {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .welcome-container {
+    color: #333;
+    margin: auto;
+    background: #f9f9f9
+      url("https://t4.ftcdn.net/jpg/02/52/46/25/360_F_252462576_koy7njo9iYx6gUcM26IZcDUs9fMKIKJs.jpg")
+      none;
+    background-size: 100%;
+    height: 50vh;
+    text-align: center;
+    padding: 80px 0;
   }
-  .bg-image img {
-    height: 500px;
-    z-index: -10;
-    object-fit: contain;
-    width: 100%;
+  .welcome-container h1 {
+    font-size: 2rem;
+    margin: auto;
+    max-width: 250px;
   }
-  
+  .welcome-container h3 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+  .button {
+    padding: 15px;
+  }
   .container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     z-index: -1;
   }
-  .container-heading{
+  .container-heading {
     display: flex;
     flex-direction: column;
-    margin-left: 150px;
+    margin: 0;
+    margin-top: 80px;
   }
   .container h1 {
-    width: 350px;
+    width: 280px;
+    text-align: center;
     margin: auto;
-    font-size: 44px;
+    font-size: 28px;
     color: black;
   }
   .container h3 {
@@ -85,84 +217,43 @@ body{
     margin: 20px auto;
     color: black;
   }
-  .container button {
-    background-color: rgb(207, 226, 215);
-    height: 50px;
-    width: 280px;
-    margin-top: 30px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: black;
-    font-weight: 600;
-    font-size: 1.4rem;
+  .bg-image {
+    margin-left: 20px;
   }
-  .form-container{
-    margin: 10px;
+  .bg-image img {
+    height: 150px;
+    z-index: -10;
+    object-fit: contain;
+    width: 100%;
   }
   .trip-form {
-    color: white;
-    border-radius: 10px;
-    padding-left: 10px;
-    width: fit-content;
-    margin: 10px auto;
-    
+    width: 90%;
+    height: auto;
   }
   .trip-form form {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding-left: 10px;
+    padding: 8px 0;
   }
-  .trip-form form span {
-    margin-top: 15px;
-    font-size: 30px;
-    color: rgb(96, 92, 92);
+  .trip-form h5 {
+    margin: 3px 0;
   }
   .trip-form input {
-    height: 30px;
-    width: 200px;
-    border: none;
+    height: 50px;
+    width: 250px;
+    border: 1px solid rgb(161, 159, 159);
     outline: none;
+    padding-left: 10px;
     border-radius: 4px;
     color: black;
   }
-  
-  .trip-form h5 {
-    color: black;
-    font-weight: 500;
-  }
   .trip-form form div {
     margin: 5px 10px;
-    border-right: 1px solid silver;
-    padding-right: 10px;
+    border-right: none;
+    padding-right: 0;
   }
-  .trip-form .return-date {
-    border: none;
-  }
-  .pickup-date input, .return-date input{
-   width:150px;
-  }
-  .rent-btn {
-    background-color: rgb(41, 227, 122);
-    height: 45px;
-    width: 180px;
-    margin: 7px 10px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    color: white;
-    font-size: 1rem;
-  }
-
-  input::placeholder {
-    color: rgb(154, 147, 147);
-  }
-  .black {
-    color: black;
-  }
-  .white {
-    color: white;
-  }
-  
+}

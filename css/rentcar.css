@@ -145,3 +145,66 @@
   padding: 3px;
   font-size: 24px;
 }
+
+@media (max-width:768px){
+  .car-reserve-form-container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 2rem;
+    gap: 10px;
+    border-radius: 14px;
+  }
+  .car-reserve-container .car-reserve-form {
+    width: 400px;
+    height: 530px;
+    margin: auto;
+    padding: 0.8rem;
+    
+  }
+  .car-reserve-form input {
+    display: flex;
+    width: 260px;
+    height: 50px;
+    padding: 20px;
+    font-size: 16px;
+  }
+  .pick-date input {
+    width: 160px;
+  }
+  .span-container {
+    padding-left: 3px;
+    padding-right: 2px;
+    width: 100px;
+  }
+  .span-container span {
+    padding-right: 5px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .car-details-container {
+    margin-left: 0px;
+  }
+  .card {
+    width: 400px;
+    margin: 20px auto;
+    padding: 0.8rem;
+  }
+  .car-details {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    flex-wrap: wrap;
+  }
+  .car-details-icons span p {
+    font-size: 12px;
+    margin: 5px;
+    font-family: sans-serif;
+    color: rgb(94, 93, 93);
+  }
+  .car-details-icons span {
+    color: #535151;
+    padding: 3px;
+    font-size: 22px;
+  }
+}

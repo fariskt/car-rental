@@ -174,3 +174,34 @@
     position: absolute;
     margin: 2px 5px;
   }
+
+  @media (max-width:768px){
+    .reserve-car{
+      background-color: #fff;
+      margin:50px auto;
+      padding:1rem 1rem;
+      width: 380px; 
+      height: 420px;
+    }
+    .reserve-car-icons h3 {
+      font-size: 18px;
+      padding: 0px;
+      color: rgb(58, 135, 217);
+      background-color: rgb(221, 229, 235);
+      text-align: center;
+      border: 1px solid rgb(232, 230, 230);
+      border-radius: 20px;
+      height: 80px;
+      width: 80px;
+    }
+    .reserve-car-icons h3 span{
+      font-size: 16px;
+    display: block;
+    width: 100px;
+    margin: 10px -10px;
+    }
+    .reserve-car .resereve-car-heading{
+      margin-top: 40px;
+      color: black;
+    }
+  }

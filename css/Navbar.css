@@ -9,7 +9,7 @@
   border-bottom: 1px solid rgb(226, 226, 226);
   width: 100%;
   position: fixed;
-  background-color: #fff;
+  background-color: white;
   z-index: 11;
 }
 
@@ -89,7 +89,7 @@ nav ul li ul li a{
   position: absolute;
   display: block;
   content: '';
-  background: #fff;
+  background: black;
   height: 5px;
   width: 35px;
   transition: all 300ms ease-in-out;
@@ -133,8 +133,11 @@ nav ul li ul li a{
 
   .nav-mobile{
       display: block;
+      
   }
-
+.nav-bar{
+  width: 100vw;
+}
   nav{
       width: 100%;
       padding: 70px 0 15px;
@@ -142,18 +145,23 @@ nav ul li ul li a{
 
   nav ul{
       display: none;
-  }
-
-  nav ul li {
+    }
+    
+    nav ul li {
       float: none;
+      border-radius: 10px;
+      border-bottom: 1px solid #d9d6d6;
+  }
+  .nav-list{
+    text-align: center;
+    background-color: #343434;
   }
 
   nav ul li a{
       padding: 15px;
       line-height: 20px;
-      padding-left: 25%;
+      color: whitesmoke;
   }
-
 
   nav ul li ul li a{
       padding-left: 30%;
