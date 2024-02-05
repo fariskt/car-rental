@@ -4,34 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/RenterForm.css" />
+    <link rel="stylesheet" href="./css/Footer.css">
     <link rel="stylesheet" href="./css/Navbar.css" />
+    <script src="./js/Hero.js"></script>
     <title>Car Information Form</title>
   </head>
   <body>
-    <div class="navbar">
-      <nav>
-        <div class="navbar">
-          <div class="logo">
-            <h2>
-              <a href="index.html" class="black">
-                Car<span style="color: #19dc81">Rent</span>
+    <div>
+      <div class="nav-bar">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="index.html"
+              >Car<span style="color: rgb(25, 168, 46)">Rent</span></a
+            >
+          </div>
+          <nav>
+            <div class="nav-mobile">
+              <a href="#" id="nav-toggle">
+                <span></span>
               </a>
-            </h2>
-          </div>
-          <div class="nav-items">
-            <h2>
-              <a href="index.html">Home</a>
-            </h2>
-            <h2><a href="RenterForm.html">Become a renter</a></h2>
-            <h2>Contact</h2>
-            <h2>
-              <a href="Login.html" class="nav-login-btn"> Login </a>
-            </h2>
-          </div>
+            </div>
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="RenterForm.html">Become a Renter</a></li>
+              <li><a href="#footer">Contact</a></li>
+              <li>
+                <a href="Login.html">
+                  <button class="login-btn">Login</button>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </nav>
+      </div>
     </div>
-    <h1 style="margin-top: 110px; text-align: center">Rent Your Car</h1>
+    <h1 style="padding-top: 90px; text-align: center">Rent Your Car</h1>
     <div class="renter-form-container">
       <div class="vehicle-details">
         <h3>Vehicle Information</h3>
@@ -96,7 +103,7 @@
               </option>
             </select>
           </div>
-         
+
           <div class="upload-car-image">
             <div class="car-image">
               <h4>Upload Your Car Image</h4>
@@ -104,9 +111,7 @@
             </div>
           </div>
 
-          <h2
-            style="font-size: 24px; color: rgb(19, 173, 73); margin: 30px 0"
-          >
+          <h2 style="font-size: 24px; color: rgb(19, 173, 73); margin: 30px 0">
             Personal Details
           </h2>
           <div class="personal-details">
@@ -138,11 +143,7 @@
 
             <div class="renter-form-document">
               <h4>Driving License</h4>
-              <input
-                type="file"
-                name=""
-                id=""
-              />
+              <input type="file" name="" id="" />
             </div>
             <div class="renter-form-document">
               <h4>Vehicle Registration Document</h4>
@@ -182,5 +183,48 @@
         <button type="button" class="reserve-btn">Reserve Now</button>
       </div>
     </div>
+    <div class="footer" id="footer">
+      <div class="footer-header">
+        <div class="elements"></div>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h2>CarRent</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicingquam
+              accusantium officia iure amet minus quia? Lorem ipsum dolor, sit
+              amet consectetur adipisicingquam accusantium officia iure amet
+              minus quia? Lorem ipsum dolor, sit amet consectetur
+              adipisicingquam accusantium officia iure amet minus quia?
+            </p>
+            <h3 style="padding-top: 30px">Contact Number : 987654321</h3>
+          </div>
+          <div class="footer-bottom">
+            <h3>Info</h3>
+            <a to="/about">
+              <h4>About</h4>
+            </a>
+            <a to="/renter">
+              <h4>Become a renter</h4>
+            </a>
+            <a to="/contact">
+              <h4>Contact us</h4>
+            </a>
+          </div>
+          <div class="footer-bottom">
+            <h3>Follow us</h3>
+            <h4>Instagram</h4>
+            <h4>Facebook</h4>
+            <h4>Whatsapp</h4>
+            <h4>Twitter</h4>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <div class="copyright">
+            <p>Copyright ©️ 2024 All right reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>
