@@ -52,37 +52,58 @@
             <input type="text" placeholder="Enter your last name" />
           </div>
           <div class="age">
-            <h4>Transmission</h4>
-            <select name="" id="">
-              <option value="">Auto</option>
-              <option value="">Manual</option>
-            </select>
+           <h4>Pickup Date</h4>
+           <input
+                placeholder="Start Date"
+                type="text"
+                onfocus="(this.type='datetime-local')"
+                onblur="(this.type='text')" />
           </div>
           <div class="age">
-            <h4>Air Conditioning</h4>
-            <select name="" id="">
-              <option value="">Yes</option>
-              <option value="">No</option>
-            </select>
-          </div>
-          <div class="age">
-            <h4>Number of Seats</h4>
-            <select name="" id="">
-              <option value="">7</option>
-              <option value="">5</option>
-              <option value="">4</option>
-              <option value="">2</option>
-            </select>
+           <h4>Return Date</h4>
+           <input
+           placeholder="End Date"
+           type="text"
+           onfocus="(this.type='datetime-local')"
+           onblur="(this.type='text')" />
           </div>
 
-          <div class="age">
-            <h4>Luggage Capacity</h4>
-            <select name="" id="">
-              <option value="">5</option>
-              <option value="">4</option>
-              <option value="">2</option>
-            </select>
+          <div class="select-option">
+            <div class="age">
+              <h4>Transmission</h4>
+              <select name="" id="">
+                <option value="">Auto</option>
+                <option value="">Manual</option>
+              </select>
+            </div>
+            <div class="age">
+              <h4>Air Conditioning</h4>
+              <select name="" id="">
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+            </div>
+            <div class="age">
+              <h4>Number of Seats</h4>
+              <select name="" id="">
+                <option value="">7</option>
+                <option value="">5</option>
+                <option value="">4</option>
+                <option value="">2</option>
+              </select>
+            </div>
+  
+            <div class="age">
+              <h4>Luggage Capacity</h4>
+              <select name="" id="">
+                <option value="">5</option>
+                <option value="">4</option>
+                <option value="">2</option>
+              </select>
+            </div>
           </div>
+
+
           <div class="age">
             <h4>Fuel</h4>
             <select name="" id="">
@@ -91,6 +112,7 @@
               <option value="">Other</option>
             </select>
           </div>
+
           <div class="legal-history">
             <h4>Legal History</h4>
             <select id="legalHistory" name="legalHistory" required>
@@ -125,7 +147,7 @@
             </div>
             <div class="phone-no-age">
               <h4>Phone Number</h4>
-              <input type="number" placeholder="Enter your phone number" />
+              <input type="text" pattern="\d*" maxlength="10" placeholder="Enter your phone number">
             </div>
             <div class="age">
               <h4>Age</h4>
@@ -156,11 +178,7 @@
             </div>
             <div class="address">
               <h4>Address</h4>
-              <input
-                type="text"
-                placeholder="Enter your Address"
-                class="address-inp"
-              />
+             <textarea rows="4" cols="99" placeholder="Enter your address here..."></textarea>
             </div>
             <div class="city-zipcode">
               <div class="city">

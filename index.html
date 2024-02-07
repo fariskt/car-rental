@@ -92,14 +92,23 @@
             </span>
             <div class="pickup-date">
               <h5>Pickup date</h5>
-              <input type="date" />
+              <input
+                placeholder="Start Time"
+                type="text"
+                onfocus="(this.type='date')"
+                onblur="(this.type='text')"/>
+
             </div>
             <span>
               <MdOutlineDateRange />
             </span>
             <div class="return-date">
               <h5>Return date</h5>
-              <input type="date" />
+              <input
+                placeholder="End Time"
+                type="text"
+                onfocus="(this.type='date')"
+                onblur="(this.type='text')" />
             </div>
 
             <button type="submit" class="rent-btn">Search</button>

@@ -179,8 +179,8 @@
     .reserve-car{
       background-color: #fff;
       margin:50px auto;
-      padding:1rem 1rem;
-      width: 380px; 
+      padding:1rem;
+      width: 360px; 
       height: 420px;
     }
     .reserve-car-icons h3 {
@@ -203,5 +203,8 @@
     .reserve-car .resereve-car-heading{
       margin-top: 40px;
       color: black;
+    }
+    .featured-vehicle{
+      max-width: 100%;
     }
   }
